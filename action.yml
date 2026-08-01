@@ -12,22 +12,22 @@ inputs:
 
 outputs:
   package-name:
-    description: "Package name"
+    description: "Package name ('pkg' for 'pkg-1.2.3-r4.apk')"
     value: ${{ steps.pkg-info.outputs.package-name }}
   package-version:
-    description: "Package version"
+    description: "Package version ('1.2.3' for 'pkg-1.2.3-r4.apk')"
     value: ${{ steps.pkg-info.outputs.package-version }}
   package-epoch:
-    description: "Package epoch"
+    description: "Package epoch ('4' for 'pkg-1.2.3-r4.apk')"
     value: ${{ steps.pkg-info.outputs.package-epoch }}
   package-fullname:
-    description: "Package fullname"
+    description: "Package fullname ('pkg-1.2.3-r4' for 'pkg-1.2.3-r4.apk')"
     value: ${{ steps.pkg-info.outputs.package-fullname }}
   package-fullversion:
-    description: "Package fullversion"
+    description: "Package fullversion ('1.2.3-r4' for 'pkg-1.2.3-r4.apk')"
     value: ${{ steps.pkg-info.outputs.package-fullversion }}
   package-distro:
-    description: "Package distro"
+    description: "Package distro ('wolfi', 'alpine', etc.)"
     value: ${{ steps.pkg-info.outputs.package-distro }}
 
 runs:
