@@ -1,3 +1,4 @@
+# $schema=https://www.schemastore.org/github-action.json
 name: "Get melange package info"
 description: "Get information about a melange package"
 
